@@ -1,9 +1,9 @@
 /* Custom properties/variables  */
 :root {
     --main-white: #f0f0f0;
-    --main-red: #6f3232;
-    --main-blue: #231410;
-    --main-gray: #6a83be;
+    --main-red: #000000;
+    --main-blue: #f3dcd6;
+    --main-gray: #000000;
   }
   
   /* Base reset */
@@ -152,7 +152,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-color: rgb(115, 125, 150);
   }
   
@@ -174,12 +174,14 @@
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
+    color: rgb(0, 0, 0);
     border-bottom: 0.2rem solid var(--main-white);
   }
   
   @media (max-width: 28.75em) {
     .projects-section-header {
       font-size: 4rem;
+
     }
   }
   
@@ -225,6 +227,15 @@
     object-fit: cover;
   }
   
+  .project-image:hover {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    border: #ff7f50;
+    border-width: 2px;
+    border-style: solid;
+    object-fit: cover;
+  }
+
   .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
