@@ -1,31 +1,118 @@
-<!DOCTYPE html>
-<head> <link rel="stylesheet" href="style.css"> </head>
+<div id="page-wrapper">
+  
+  
+  <header id="header">
 
-<header id="header">
-  <nav id="nav-bar"> 
-    <ol> 
+    <link rel="stylesheet" href="style.css">
 
-      <li class="nav-item"><a href="#header-img" class="link nav-link">Features</a></li>
+    <div class="logo">
+      <img
+        id="header-img"
+        src="img/kblogo.png"
+        alt="original trombones logo"
+      />
+    </div>
 
-      <li class="nav-item"><a href="#email" class="link nav-link">email</a></li>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <li class="nav-item"><a href="#video" class="link nav-link">Form</a></li>
+  <div class="container"></div>
 
-    </ol>
-  </nav>
+  <section id="hero">
+    <h2>Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
 
-<h1> Behold </h1>
-
-<img src="asdfasdf" id="header-img"> </a>
-</header>
-
-<body> <iframe id="video" src="asdf"> </iframe> 
-
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-
-<input id="email" placeholder="email" type="email" name="email"></input>
-<input id="submit" type="submit"></input>
-
-
-</form>
-</body>
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Premium Materials</h2>
+          <p>
+            Our keyboards are made from compressed flax and aluminum giving them weight and a premium feel.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            We make sure you receive your keyboard as soon as it is crafted with secure express mail.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>
+            We have an audited Quality Assurance process where every function of the keyboard is tested and confirmed before shipping.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zECZE656kIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Key Set</div>
+        <h2>$300</h2>
+        <ol>
+          <li>Custom Keys</li>
+          <li>Premium Materials</li>
+          <li>Fast Shipping</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Keyboard Kits</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Premium Machined Parts</li>
+          <li>Premium Materials</li>
+          <li>Clear Assembly Instructions</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Fully Assembled Keyboards</div>
+        <h2>$800</h2>
+        <ol>
+          <li>The Best Keyboards</li>
+          <li>Hand Assembled</li>
+          <li>From Premium Components</li>
+          <li>To Your Door Securely</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2022, Twisted Keys</span>
+    </footer>
+  </div>
+</div>
